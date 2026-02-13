@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .title {
+      color: #33ff33;
+      font-size: 26px;
+      margin-bottom: 25px;
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 25px;
+      border: 2px solid black;
+      cursor: pointer;
+    }
+
+    .add, .sale {
+      background-color: #a8f4a8;
+    }
+
+    .wish {
+      background-color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2 class="title">Shopping application</h2>
+
+  <div class="btn-container">
+    <button class="btn add" onclick="addToBag()">Add to Bag</button>
+    <button class="btn wish" onclick="moveToWishlist()">MOVE TO WISHLIST</button>
+    <button class="btn sale" onclick="addSaleItem()">Add 1+1 sale item</button>
+  </div>
+
+  <h1 id="bag-count">Your Bag has 0 items</h1>
+
+  <script>
+    let bagItems = 0;
+
+    function updateDisplay() {
+      document.getElementById("bag-count").innerText =
+        `Your Bag has ${bagItems} items`;
+    }
+
+    function addToBag() {
+      bagItems++;
+      updateDisplay();
+    }
+
+    function addSaleItem() {
+      bagItems += 2;
+      updateDisplay();
+    }
+
+    function moveToWishlist() {
+      if (bagItems > 0) bagItems--;
+      updateDisplay();
+    }
+  </script>
+
+</body>
+</html>
