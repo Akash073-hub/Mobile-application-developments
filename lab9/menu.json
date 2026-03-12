@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Paneer Butter Masala",
+    "category": "Veg",
+    "price": 250,
+    "rating": 4.5
+  },
+  {
+    "id": 2,
+    "name": "Chicken Biryani",
+    "category": "Non-Veg",
+    "price": 300,
+    "rating": 4.7
+  },
+  {
+    "id": 3,
+    "name": "Cold Coffee",
+    "category": "Beverage",
+    "price": 120,
+    "rating": 4.2
+  },
+  {
+    "id": 4,
+    "name": "Aloo Gobi",
+    "category": "Veg",
+    "price": 180,
+    "rating": 4.3
+  },
+  {
+    "id": 5,
+    "name": "Mutton Curry",
+    "category": "Non-Veg",
+    "price": 350,
+    "rating": 4.8
+  },
+  {
+    "id": 6,
+    "name": "Mango Lassi",
+    "category": "Beverage",
+    "price": 100,
+    "rating": 4.4
+  },
+  {
+    "id": 7,
+    "name": "Chana Masala",
+    "category": "Veg",
+    "price": 160,
+    "rating": 4.1
+  },
+  {
+    "id": 8,
+    "name": "Fish Fry",
+    "category": "Non-Veg",
+    "price": 280,
+    "rating": 4.6
+  }
+]
